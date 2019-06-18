@@ -107,7 +107,7 @@ CREATE TABLE `tbl_bms_user` (
 --
 
 INSERT INTO `tbl_bms_user` (`id`, `username`, `email`, `password`, `created`) VALUES
-(1, 'Raja Nama', 'Rajanamdav@gmail.com', '25f9e794323b453885f5181f1b624d0b', '2018-01-12 11:37:23');
+(1, 'Raja Nama', 'demo_email@gmail.com', '25f9e794323b453885f5181f1b624d0b', '2018-01-12 11:37:23');
 
 -- --------------------------------------------------------
 
@@ -225,10 +225,10 @@ CREATE TABLE `tbl_contact` (
 --
 
 INSERT INTO `tbl_contact` (`id`, `email`, `name`, `message`, `created`, `action`) VALUES
-(1, 'Rajanamdav@gmail.com', 'Raja Nama', 'This is test message', '2018-01-06 09:03:16', 'process'),
+(1, 'demo_email@gmail.com', 'Raja Nama', 'This is test message', '2018-01-06 09:03:16', 'process'),
 (2, 'Dharmendra@gmail.com', 'Dharmendra', 'this is second test', '2018-01-06 09:03:37', 'done'),
 (3, 'Dharmendra@gmail.com', 'Dharmendra', 'this is second test', '2018-01-06 09:03:37', 'approved'),
-(4, 'Rajanamdav@gmail.com', 'Raja Nama', 'This is test message', '2018-01-06 09:03:16', 'process');
+(4, 'demo_email@gmail.com', 'Raja Nama', 'This is test message', '2018-01-06 09:03:16', 'process');
 
 -- --------------------------------------------------------
 
@@ -1347,12 +1347,12 @@ CREATE TABLE `tbl_subscribe` (
 --
 
 INSERT INTO `tbl_subscribe` (`id`, `email`, `status`, `created`) VALUES
-(1, 'rajanamdav@gmail.com', 'inactive', '2018-01-31 06:59:30'),
-(2, 'rajanamdav@gmail.com', 'inactive', '2018-01-31 07:00:21'),
-(3, 'rajanamdav@gmail.com', 'inactive', '2018-01-31 10:08:19'),
-(4, 'rajanamdav@gmail.com', 'inactive', '2018-01-31 10:08:58'),
-(5, 'rajanamdav@gmail.com', 'inactive', '2018-01-31 10:09:26'),
-(6, 'rajanamdav@gmail.com', 'inactive', '2018-01-31 10:09:53');
+(1, 'demo_email@gmail.com', 'inactive', '2018-01-31 06:59:30'),
+(2, 'demo_email@gmail.com', 'inactive', '2018-01-31 07:00:21'),
+(3, 'demo_email@gmail.com', 'inactive', '2018-01-31 10:08:19'),
+(4, 'demo_email@gmail.com', 'inactive', '2018-01-31 10:08:58'),
+(5, 'demo_email@gmail.com', 'inactive', '2018-01-31 10:09:26'),
+(6, 'demo_email@gmail.com', 'inactive', '2018-01-31 10:09:53');
 
 -- --------------------------------------------------------
 
@@ -1486,7 +1486,7 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id`, `name`, `email`, `password`, `confirm_password`, `forget_hint`, `gender`, `image`, `profession`, `status`, `location`, `mobile`, `institute_name`, `about`, `dob`, `modified`, `created`) VALUES
-(1, 'Raja Nama', 'Rajanamdav@gmail.com', '25f9e794323b453885f5181f1b624d0b', '25f9e794323b453885f5181f1b624d0b', '', 'male', 'image.jpg', 'student', 'inactive', '{\"longitute\":\"75.86475270000005\",\"latitude\":\"25.2138156\",\"location_name\":\"Kota\"}', '8890011188', 'CP', 'Hello,I\'m John Doe Creative Graphic Designer & User Experience Desiger based in Website, I create digital Products a more Beautiful and usable place. This is Photoshops version of Lorem Ipsum. Proin gravida nibh vel velit quet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulpuate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.', '1994-03-06', '2018-01-11 12:37:48', '2017-12-26 11:20:15'),
+(1, 'Raja Nama', 'demo_email@gmail.com', '25f9e794323b453885f5181f1b624d0b', '25f9e794323b453885f5181f1b624d0b', '', 'male', 'image.jpg', 'student', 'inactive', '{\"longitute\":\"75.86475270000005\",\"latitude\":\"25.2138156\",\"location_name\":\"Kota\"}', '8890011188', 'CP', 'Hello,I\'m John Doe Creative Graphic Designer & User Experience Desiger based in Website, I create digital Products a more Beautiful and usable place. This is Photoshops version of Lorem Ipsum. Proin gravida nibh vel velit quet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulpuate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.', '1994-03-06', '2018-01-11 12:37:48', '2017-12-26 11:20:15'),
 (2, 'Dharmendra', 'Dharmendra@gmail.com', '25f9e794323b453885f5181f1b624d0b', '25f9e794323b453885f5181f1b624d0b', '', 'male', 'index.jpg', 'teacher', 'inactive', '{\"longitute\":\"75.97244909999995\",\"latitude\":\"25.1227718\",\"location_name\":\"Kethun\"}', '7014083771', 'CPUR', 'Hello! I\'m dharmendra Nama', '1994-03-06', '2018-01-31 04:29:10', '2017-12-27 09:07:05'),
 (3, 'Pawan Kamboj', 'Pawan@gmail.com', '25f9e794323b453885f5181f1b624d0b', '25f9e794323b453885f5181f1b624d0b', '', 'male', 'avatar.png', 'student', 'active', '{\"longitute\":\"75.89841539999998\",\"latitude\":\"25.1490097\",\"location_name\":\"Raipura\"}', '1234567890', 'RH', NULL, '0000-00-00', '2018-01-10 07:30:20', '2018-01-02 12:41:29'),
 (6, 'Hmnspr', 'sandesh@gmail.com', '25f9e794323b453885f5181f1b624d0b', '', '', 'other', '556744_1wYpi51504622425.jpg', 'business', 'active', '{\"longitute\":\"75.89841539999998\",\"latitude\":\"25.1490097\",\"location_name\":\"Raipura\"}', '2147483647', 'Hmnspr Coaching institute', NULL, '0000-00-00', '2018-01-17 10:09:13', '2018-01-08 11:23:48');
