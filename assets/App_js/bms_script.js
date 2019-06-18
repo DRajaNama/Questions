@@ -54,7 +54,7 @@ app.config(function($routeProvider,$locationProvider) {
 
 
 app.controller('dashboardCtrl',function($scope,$http){
-	//dashboard controller 
+	//dashboard controller this
 });
 app.controller('SeoCtrl',function($scope,$http){
 	
