@@ -1,0 +1,429 @@
+BMS Login > 
+
+BMS 
+	Profile
+		Logout 
+		
+	Home	
+	
+		Display Total Questions
+		Display Total Answers
+		Display Total Users
+		Display Total Visitor
+		Display Total Contact
+		Display Total Ads
+		
+		Site State with map
+		Every Month Visitor States Chart
+	
+	
+	Questions   List 
+	
+		Display Total Questions
+		Display Active Questions
+		Display Inactive Questions
+		
+		Search with Filter
+		
+		List of Questions
+			ID
+			Creator Name
+			Question 
+			Category
+			Answers
+			Views
+			Tags
+			Created
+			Status
+			Action
+			
+		list with Pagination
+		
+		Status
+			>active or Inactive
+		Action
+			> Delete 
+			> Edit
+			> View
+		
+	Answers	    List
+		
+		Display Total Answers
+		Display Active Answers
+		Display Inactive Answers
+		
+		Search with Filter
+		
+		List of Answers
+			ID
+			Creator Name
+			Answers 
+			Accepted
+			Created
+			modified
+			Action
+			
+		list with Pagination
+		
+		Action
+			> Delete 
+			> Edit
+			> View
+		
+	Contact		List
+	
+		Display Total Contact
+		Display Pending 
+		Display Done 
+		
+		Search with Filter
+		
+		List of Contact
+			ID
+			Name
+			Email 
+			Message
+			Created
+			Status
+			Action
+			
+		list with Pagination
+		
+		Status
+			>Pending | process | approved | done 
+		Action
+			> Delete 
+			> reassign status pending
+		
+	Users		List
+	
+		Display Total Users
+		Display Active Users 
+		Display Inactive Users 
+		
+		Search with Filter
+		
+		List of Users
+			ID
+			Name
+			Email 
+			Gender
+			Profession
+			Locaiton
+			Institute
+			Mobile
+			Created
+			Modified
+			Status
+			Action
+			
+		list with Pagination
+		
+		Status
+			>active or Inactive
+		Action
+			> Delete 
+			> login
+			> Edit
+			> View
+		
+		
+	Category	List
+	
+		Display Category
+		Display Total Link Question 
+		
+		Search with Filter
+		Add Category
+		
+		List of Category
+			ID
+			Title
+			Description 
+			Total Link Question
+			Status
+			Action
+			
+		list with Pagination
+		
+		Status
+			>active or Inactive
+		Action
+			> Delete 
+			> Edit
+		
+	Ads			List	
+	
+		Display Total Ads
+		Display Active Ads
+		Display Inactive Ads
+		
+		Search with Filter
+			
+		List of Category
+			ID
+			User Id
+			Creator name
+			Image
+			Title 
+			Type
+			Created
+			Terminated
+			Status 
+			Action
+						
+		list with Pagination
+		
+		Status
+			>active or Inactive
+		Action
+			> Delete 
+			> Edit
+			
+	SEO			
+		Insert SEO>
+		
+		Site SEO >
+			Meta Title
+			Meta Description
+			Meta Keyword
+			Robots Meta Noindex
+			Robots Meta NoFollow
+		
+		Question SEO > 
+			Meta Title
+			Robots Meta Noindex
+			Robots Meta NoFollow
+			
+		Title SEO >
+			Search Page
+			404 Page
+			
+Front End Page (Home Site)
+
+	Home Page
+		
+		Display Total Users
+		Display Total Question
+		Display Total Answers
+		
+		Search With Filter
+		
+		Question  list 
+		
+			Question
+			Answer
+			Tags
+			Category
+			Status
+		List with Pagination
+	
+		Footer 
+			Contact form
+			Address
+			Commited to Kota
+			
+	Ask Question Page
+	
+		Question
+		Category
+		Description
+		Tags
+	
+	Question  list Page
+		
+		Question
+		Answer
+		Tags
+		Category
+		Status
+		
+		List with Pagination
+		
+	Tags List Page
+		
+		Search Bar 
+		
+		Tag Title 
+		Tag Description
+		Interested Users
+		Linked Question
+			
+		List with Pagination
+		
+	User List Page
+		
+		Search Bar
+		 
+		User Image
+		User Name
+		User Location
+		User Interested Tag
+		
+		List with Pagination
+		
+	Category List Page
+		
+		Search Bar
+		 
+		Category Name
+		Category Description
+		Link Questions
+		
+		List with Pagination
+		
+	Side Navbar 
+	
+		User Image (when Login)
+		
+		List 
+			> Questions
+			> Tags
+			> Users
+			> Category
+			
+			
+			
+
+			
+			
+			
+Data Base Tables 
+
+	Questions_db
+			
+			>	tbl_adv
+					id
+					user_id
+					title
+					image
+					type
+					created
+					stoped
+					status
+			>	tbl_answers
+					id
+					questions_id
+					user_id
+					answer
+					accepted
+					created
+					modified
+			>	tbl_bms_user
+					id 
+					username
+					email
+					password
+					created
+			> 	tbl_bs_page
+					id 
+					user_id
+					plan
+					cost
+					limits
+					plan_duration
+					time_status
+					created
+					modified
+			>	tbl_category
+					id	
+					title
+					description
+					total_link_question
+					status
+			>	tbl_cate_ques
+					id
+					category_id
+					question_id
+			>	tbl_complain
+					id	
+					user_id	
+					message
+					status
+					created
+			>	tbl_contact
+					id
+					email
+					name
+					message
+					created
+					action
+			> 	tbl_fav_tag
+					id
+					user_id
+					tag_id
+			>	tbl_follow	
+					id
+					follower_id
+					following_id
+					created
+			> 	tbl_questions
+					id
+					creator_id
+					question 
+					description
+					total_no_answer
+					viewers
+					level
+					status
+					created
+					modified
+					object_link_id
+					taags
+					cats
+			>	tbl_seo
+					id
+					meta_key
+					meta_value
+			>	tbl_site_state
+					id	
+					ip_address
+					browser
+					os(operating system)
+					country
+					created
+			>	tbl_subscribe
+					id
+					email
+					status
+					created
+			>	tbl_tags
+					id
+					title
+					description
+					total_linked_question
+					total_intrest_user
+			>	tbl_tags_question
+					id
+					question_id
+					tags_id
+			>	tbl_user
+					id
+					name
+					email
+					password
+					confirm_password
+					forget_hint
+					gender
+					image
+					profession
+					status
+					location
+					mobile
+					institute_name
+					about
+					dob
+					modified
+					created
+			>	tbl_user_visitor
+					id
+					user_id
+					visitor_ip
+					created
+			>	tbl_votes
+					id
+					medium_type
+					medium_id
+					user_id
+					
+			
